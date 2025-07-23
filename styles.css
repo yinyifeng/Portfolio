@@ -11,33 +11,48 @@
 body {
     font-family: 'Google Sans Code', monospace;
     background-color: #111;
+    color: white;
 }
 
-/* Navbar container */
+/* Resetting defaults */
+* {
+  box-sizing: border-box;
+}
+
+/* Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   padding: 1rem 2rem;
+  background-color: #111;
   color: white;
-  font-family: 'Google Sans Code', monospace;
 }
 
-/* Right side - nav links */
+.site-header h1 {
+  font-size: 2rem;
+  margin: 0;
+  font-weight: bold;
+}
+
 .navbar-right {
-  list-style: none;
   display: flex;
   gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .navbar-right li a {
   color: white;
   text-decoration: none;
+  font-size: 1rem;
   transition: color 0.2s ease;
 }
 
 .navbar-right li a:hover {
-  color: #00ffff; /* highlight on hover */
+  color: #00ffff;
 }
 
 .cursor {
@@ -47,4 +62,87 @@ body {
 @keyframes blink {
   0%, 50% { opacity: 1; }
   50.01%, 100% { opacity: 0; }
+}
+
+/* Content wrapper */
+.container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Example sections */
+section {
+  margin-bottom: 3rem;
+}
+
+/* Images responsive */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Responsive typography */
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.125rem;
+}
+
+/* Media Queries */
+
+/* Tablets and below */
+@media (max-width: 768px) {
+  .navbar {
+    justify-content: center;
+  }
+
+  .site-header {
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .navbar-right {
+    flex-basis: 100%;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  .navbar-right {
+    flex-wrap: wrap;
+    gap: 0.8rem;
+  }
+
+  .navbar-right li a {
+    font-size: 0.9rem;
+  }
+
+  body {
+    padding: 0.5rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
 }
