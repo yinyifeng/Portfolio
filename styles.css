@@ -146,3 +146,32 @@ p {
     font-size: 0.9rem;
   }
 }
+
+.contact-form {
+  border: 1px solid white;
+  padding: 20px;
+}
+
+#typewrite {
+  font-family: 'Google Sans Code', monospace;
+  color: white;
+  display: inline;
+  word-wrap: break-word;
+  font-size: 30px;
+}
+
+.cursor {
+  color: white;
+  font-weight: bold;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+#home-text {
+  margin: 30px auto;
+  width: 60%;
+  text-align: center;
+}
