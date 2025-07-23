@@ -1,0 +1,50 @@
+/* SETTING FONT FOR ENTIRE PROJECT */
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Code:wght@400;500;700&display=swap');
+
+.google-sans-code {
+  font-family: 'Google Sans Code', monospace;
+  font-optical-sizing: auto;
+  font-weight: 400; /* Choose 400, 500, or 700 depending on your use */
+  font-style: normal;
+}
+
+body {
+    font-family: 'Google Sans Code', monospace;
+    background-color: #111;
+}
+
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  color: white;
+  font-family: 'Google Sans Code', monospace;
+}
+
+/* Right side - nav links */
+.navbar-right {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar-right li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.navbar-right li a:hover {
+  color: #00ffff; /* highlight on hover */
+}
+
+.cursor {
+  animation: blink 1.2s steps(2, start) infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  50.01%, 100% { opacity: 0; }
+}
