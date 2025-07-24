@@ -25,7 +25,7 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  padding: 1rem 2rem;
+  padding: 1.5rem;
   background-color: #111;
   color: white;
 }
@@ -157,7 +157,7 @@ p {
   color: white;
   display: inline;
   word-wrap: break-word;
-  font-size: 30px;
+  font-size: 2rem;
 }
 
 .cursor {
@@ -171,7 +171,39 @@ p {
 }
 
 #home-text {
-  margin: 30px auto;
-  width: 60%;
+  margin: 20px auto;
+  width: 70%;
   text-align: center;
+}
+
+#learn-more {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  text-decoration: none;
+}
+
+#learn-more:hover {
+  background-color: white;
+  color: black;
+}
+
+#home-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* align items at the top */
+  align-items: center;
+  height: calc(100vh - 72px);
+  padding-top: 20vh; /* push down 20% of viewport height */
+  text-align: center;
+}
+
+#home-page-content {
+  height: 100%;
+  overflow: hidden; /* hides scrollbars */
 }
