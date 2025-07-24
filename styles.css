@@ -47,7 +47,7 @@ body {
 .navbar-right li a {
   color: white;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.5rem;
   transition: color 0.2s ease;
 }
 
@@ -115,16 +115,17 @@ p {
   }
 
   h2 {
-    font-size: 1.5rem;
+    font-size: 3rem;
   }
 
   p {
-    font-size: 1rem;
+    font-size: 2rem;
   }
+
 }
 
 /* Mobile phones */
-@media (max-height: 600px), (max-width: 480px) {
+@media (max-width: 480px) {
   .navbar-right {
     flex-wrap: wrap;
     gap: 0.8rem;
@@ -147,7 +148,7 @@ p {
   }
 
   #home-text {
-    padding-top: 5vh;
+    margin-top: 8vh !important; 
   }
 }
 
