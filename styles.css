@@ -154,6 +154,66 @@ p {
   overflow-y: hidden;  /* enables scroll if content overflows */
 }
 
+.skill-orbit {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  margin: 60px auto;
+}
+
+.center-circle {
+  position: absolute;
+  top: 57%;
+  left: 57%;
+  width: 200px;
+  height: 200px;
+  background: #111;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+  font-family: 'Google Sans Code', monospace;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: center;
+  box-shadow: 0 0 12px white;
+}
+
+.orbit-icon {
+  --radius: 170px;
+  --angle: calc(360deg / 12);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: rotate(calc(var(--i) * var(--angle)))
+             translateX(var(--radius))
+             rotate(calc(-1 * var(--i) * var(--angle)));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.orbit-icon img {
+  width: 40px;
+  height: 40px;
+  filter: drop-shadow(0 0 4px white);
+  transition: transform 0.3s;
+}
+
+.orbit-icon span {
+  margin-top: 0.3rem;
+  font-size: 0.75rem;
+  color: white;
+}
+
+.orbit-icon:hover img {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 8px white);
+}
+
 
 /* -------- Media Queries -------- */
 
