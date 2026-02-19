@@ -215,6 +215,126 @@ p {
 }
 
 
+/* -------- Resume Page -------- */
+
+.resume-container {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.resume {
+  max-width: 800px;
+  width: 100%;
+  border: 1px solid #333;
+  padding: 2.5rem;
+  background-color: #1a1a1a;
+  border-radius: 4px;
+}
+
+.resume-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #333;
+}
+
+.resume-name {
+  font-size: 2rem;
+  margin: 0 0 0.25rem 0;
+  color: white;
+}
+
+.resume-subtitle {
+  font-size: 1.1rem;
+  color: #aaa;
+  margin: 0.25rem 0 0.75rem 0;
+}
+
+.resume-contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.resume-section {
+  margin-bottom: 1.75rem;
+}
+
+.resume-section-title {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #00ffff;
+  border-bottom: 1px solid #333;
+  padding-bottom: 0.4rem;
+  margin: 0 0 1rem 0;
+}
+
+.resume-entry {
+  margin-bottom: 1.25rem;
+}
+
+.resume-entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.resume-entry-title {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.resume-entry-date {
+  font-size: 0.85rem;
+  color: #888;
+  white-space: nowrap;
+}
+
+.resume-entry-subtitle {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin: 0.15rem 0 0.5rem 0;
+}
+
+.resume-entry-details {
+  list-style: disc;
+  padding-left: 1.25rem;
+  margin: 0;
+}
+
+.resume-entry-details li {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-bottom: 0.3rem;
+  line-height: 1.5;
+}
+
+.resume-skills {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.resume-skill-row {
+  font-size: 0.9rem;
+  color: #ccc;
+  line-height: 1.5;
+}
+
+.resume-skill-label {
+  font-weight: bold;
+  color: white;
+  margin-right: 0.5rem;
+}
+
+.resume-skill-label::after {
+  content: ":";
+}
+
 /* -------- Media Queries -------- */
 
 /* Tablets and below */
@@ -243,6 +363,19 @@ p {
     font-size: 2rem;
   }
 
+  .resume {
+    padding: 1.5rem;
+  }
+
+  .resume-entry-header {
+    flex-direction: column;
+  }
+
+  .resume-contact-info {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+  }
 }
 
 /* Mobile phones */
@@ -269,6 +402,14 @@ p {
   }
 
   #home-text {
-    margin-top: 8vh; 
+    margin-top: 8vh;
+  }
+
+  .resume {
+    padding: 1rem;
+  }
+
+  .resume-name {
+    font-size: 1.5rem;
   }
 }
