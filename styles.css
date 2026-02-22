@@ -215,6 +215,125 @@ p {
 }
 
 
+/* -------- Resume Page Styles -------- */
+
+.resume-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+.resume-download-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-family: 'Google Sans Code', monospace;
+  color: white;
+  background-color: #111;
+  border: 1px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+  text-decoration: none;
+  margin-bottom: 2rem;
+}
+
+.resume-download-btn:hover {
+  background-color: white;
+  color: black;
+}
+
+.resume-section {
+  margin-bottom: 2.5rem;
+}
+
+.resume-section h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: #00ffff;
+  border-bottom: 1px solid #333;
+  padding-bottom: 0.5rem;
+}
+
+.resume-card {
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+  background-color: rgba(255, 255, 255, 0.03);
+  transition: border-color 0.2s ease;
+}
+
+.resume-card:hover {
+  border-color: #00ffff;
+}
+
+.resume-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.resume-card-title {
+  font-size: 1.25rem;
+  margin: 0;
+  color: white;
+}
+
+.resume-card-subtitle {
+  font-size: 1rem;
+  margin: 0.25rem 0 0 0;
+  color: #aaa;
+}
+
+.resume-card-date {
+  font-size: 0.9rem;
+  color: #888;
+  white-space: nowrap;
+}
+
+.resume-card-content {
+  margin: 0;
+  padding-left: 1.25rem;
+  color: #ccc;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.resume-card-content li {
+  margin-bottom: 0.4rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.skills-grid .resume-card {
+  margin-bottom: 0;
+}
+
+.skills-grid .resume-card h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+  color: #00ffff;
+}
+
+.skills-grid .resume-card ul {
+  margin: 0;
+  padding-left: 1.25rem;
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+.skills-grid .resume-card li {
+  margin-bottom: 0.25rem;
+}
+
 /* -------- Media Queries -------- */
 
 /* Tablets and below */
@@ -269,6 +388,32 @@ p {
   }
 
   #home-text {
-    margin-top: 8vh; 
+    margin-top: 8vh;
+  }
+
+  /* Resume page mobile styles */
+  .resume-container {
+    padding: 0 1rem;
+    margin: 1rem auto;
+  }
+
+  .resume-card-header {
+    flex-direction: column;
+  }
+
+  .resume-card-date {
+    margin-top: 0.25rem;
+  }
+
+  .resume-card-title {
+    font-size: 1.1rem;
+  }
+
+  .resume-section h2 {
+    font-size: 1.4rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
   }
 }
